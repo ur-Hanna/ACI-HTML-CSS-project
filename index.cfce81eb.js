@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".dropbtn"),t=document.querySelector(".dropdown__content");e.addEventListener("click",(function(){var n=!0===e.getAttribute("aria-expanded")||"false";e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!n),t.classList.toggle("is-open")}))}(),$(".dropbtn").click((function(){$(".dropdown__content").fadeToggle(500)}));
+//# sourceMappingURL=index.cfce81eb.js.map

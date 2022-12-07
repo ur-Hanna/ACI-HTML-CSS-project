@@ -1,0 +1,2 @@
+!function(){var e,t;e=document.querySelector(".hero-description__btn"),t=document.querySelector(".hero__article"),e.addEventListener("click",(function(){var i="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!i),t.classList.toggle("is-open")})),$(".hero-description__btn").click((function(){$(".hero__article").fadeToggle(500)}))}();
+//# sourceMappingURL=index.4399edfd.js.map
