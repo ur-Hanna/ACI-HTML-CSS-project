@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector(".hero-description__btn"),t=document.querySelector(".hero__article");e.addEventListener("click",(()=>{const i="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!i),t.classList.toggle("is-open")}))})(),$(".hero-description__btn").click((function(){$(".hero__article").fadeToggle(500)}));
+//# sourceMappingURL=index.df77d231.js.map

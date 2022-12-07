@@ -1,0 +1,23 @@
+.section {
+  margin: 0;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.section__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  @include font(400, 34px, 1.15, 0.04);
+  text-transform: uppercase;
+  color: $second-color;
+
+  text-align: center;
+
+  @include tablet {
+    @include font(null, 48px, null, null);
+  }
+
+  @include desktop {
+    @include font(null, 58px, 1.14, 0.06);
+  }
+}

@@ -1,0 +1,23 @@
+@import './base/common';
+@import './base/reset';
+
+@import './utils/vars';
+@import './utils/hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+@import './components/section';
+@import './components/container';
+
+@import './structure/header';
+@import './structure/mobile-menu';
+@import './structure/hero';
+@import './structure/products';
+@import './structure/about';
+@import './structure/advantages';
+@import './structure/gallery';
+@import './structure/customer-reviews';
+@import './structure/contacts';
+@import './structure/footer';
+@import './structure/modal';
+@import './structure/modal-order';

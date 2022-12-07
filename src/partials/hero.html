@@ -1,0 +1,191 @@
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__text-btns">
+      <h1 class="hero__title">
+        ice cream <br />made with <br /><span class="accent-title"
+          >passion</span
+        >
+      </h1>
+      <ul class="hero-button">
+        <li class="hero-button__item">
+          <a href="#products_section" class="hero__btn hero__btn--products link"
+            >Products</a
+          >
+        </li>
+        <li class="hero-button__item">
+          <a href="#about" class="hero__btn hero__btn--about link"
+            >How it’s made?</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-counter">
+        <ul class="hero-counter-list list">
+          <li class="hero-counter__item">
+            <div class="hero-counter__circle"></div>
+            <div class="meta-text">
+              <span class="hero-counter__meta">16</span>
+              <p class="hero-counter__text">cafes</p>
+            </div>
+          </li>
+          <li class="hero-counter__item">
+            <div class="hero-counter__circle"></div>
+            <div class="meta-text">
+              <span class="hero-counter__meta">23</span>
+              <p class="hero-counter__text">food trucks</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-description">
+        <p class="hero-description__text">
+          The only ice cream in the world that doesn't hurt your throat. Your
+          children will be full and very happy.
+        </p>
+        <button
+          class="hero-description__btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="hero__article"
+        >
+          <svg class="icon-arrow">
+            <use
+              class="icon-arrow-open"
+              href="./images/icons.svg#arrow-down"
+            ></use>
+            <use
+              class="icon-arrow-close"
+              href="./images/icons.svg#arrow-up"
+            ></use>
+          </svg>
+        </button>
+        <div class="hero__article" id="hero__article">
+          <p class="hero-description__text-hidden">
+            Come to our store and taste the best ice cream in the world.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-circle animate__animated animate__backInLeft">
+        <picture
+          class="hero-circle__ice-cream animate__animated animate__bounceInDown"
+        >
+          <source
+            srcset="
+              ./images/hero/ice-cream/ice-cream_desktop.png    1x,
+              ./images/hero/ice-cream/ice-cream_desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero/ice-cream/ice-cream_tablet.png    1x,
+              ./images/hero/ice-cream/ice-cream_tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/hero/ice-cream/ice-cream_mobile.png    1x,
+              ./images/hero/ice-cream/ice-cream_mobile@2x.png 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./images/hero/ice-cream/ice-cream_mobile.png"
+            alt="ice-cream"
+          />
+        </picture>
+
+        <ul class="ice-cream-animation">
+          <li
+            class="ice-cream-animation__item ice-cream-5 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream6-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-5 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream5-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-4 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream4-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-3 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream3-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-2 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream2-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+          <li
+            class="ice-cream-animation__item ice-cream-1 animate__animated animate__fadeInDownBig"
+          >
+            <img
+              src="./images/hero/ice-cream/ice-cream-animation/ice-cream1-desktop.png"
+              alt="ice-cream"
+            />
+          </li>
+        </ul>
+      </div>
+      <picture class="hero-circle__milk">
+        <source
+          srcset="
+            ./images/hero/milk/milk_desktop.png    1x,
+            ./images/hero/milk/milk_desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/milk/milk_tablet.png    1x,
+            ./images/hero/milk/milk_tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="./images/hero/milk/milk_tablet.png" alt="milk" />
+      </picture>
+
+      <picture class="hero-circle__tasty">
+        <source
+          srcset="
+            ./images/hero/tasty/tasty_desktop.png    1x,
+            ./images/hero/tasty/tasty_desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/tasty/tasty_tablet.png    1x,
+            ./images/hero/tasty/tasty_tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="./images/hero/tasty/tasty_tablet.png" alt="tasty" />
+      </picture>
+    </div>
+  </div>
+</section>

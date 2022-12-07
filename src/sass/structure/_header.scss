@@ -1,0 +1,144 @@
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #ffb8ca;
+  padding-top: 8px;
+  z-index: 2;
+
+  @include tablet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 24px;
+    background: linear-gradient(90deg,
+        rgba(255, 184, 202, 1) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 184, 202, 0.5) 100%);
+  }
+
+  @include desktop {
+    position: absolute;
+    padding-top: 31px;
+    background: transparent;
+  }
+}
+
+.wrap-nav {
+  display: flex;
+  align-items: center;
+
+  @include desktop {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.nav {
+  display: none;
+
+  @include desktop {
+    display: block;
+    margin-left: 128px;
+  }
+}
+
+.logo {
+  display: inline-block;
+  width: 199px;
+  height: 50px;
+}
+
+.site-nav {
+  display: none;
+
+  @include desktop {
+    display: flex;
+
+    .site-nav__link.current {
+      color: $second-color;
+    }
+  }
+}
+
+.site-nav__item {
+  height: 50px;
+
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.header-buttons-wrap {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.order-butn {
+  display: none;
+
+  @include tablet {
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 160px;
+    height: 44px;
+    margin-left: 32px;
+    padding: 9px 35px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: $second-color;
+    border-color: transparent;
+    background-color: $first-color;
+    border-radius: 22px;
+  }
+
+  @include desktop {
+    width: 159px;
+  }
+}
+
+.order-link__icon {
+  margin-left: 12px;
+}
+
+.site-nav__link {
+  display: block;
+  min-height: 50px;
+  padding: 15px 0;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $first-color;
+
+  &:hover {
+    color: $second-color;
+  }
+}
+
+.to-top__link {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 184, 202, 0.5);
+  cursor: pointer;
+  transition: box-shadow 150ms linear;
+}
+
+.to-top__link:hover {
+  box-shadow: 0px 2px 6px rgba(212, 20, 67, 0.3);
+}

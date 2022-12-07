@@ -1,0 +1,325 @@
+.products {
+  background-color: $first-color;
+}
+
+.products-pre-title {
+  margin-bottom: 15px;
+
+  font-family: 'Titan One';
+  font-style: normal;
+  @include font(400, 18px, 1.17, 0.04);
+  text-align: center;
+  text-transform: uppercase;
+  color: $fourth-color;
+
+  @include tablet {
+    margin-bottom: 18px;
+
+    @include font(null, 26px, 1.15, null);
+  }
+  @include desktop {
+    margin-bottom: 16px;
+
+    @include font(null, 30px, 1.13, null);
+  }
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 148px;
+
+  gap: 140px;
+
+  @include tablet {
+    margin-top: 158px;
+    gap: 16px;
+  }
+
+  @include desktop {
+    margin-top: 281px;
+    gap: 32px;
+  }
+}
+
+.products__item {
+  max-width: 100%;
+  min-height: 100%;
+
+  @include tablet {
+    max-width: calc((100% - 16px * 2) / 3);
+  }
+
+  @include desktop {
+    max-width: calc((100% - 32px * 2) / 3);
+  }
+}
+
+.products__card {
+  position: relative;
+
+  padding: 160px 39px 40px 41px;
+  border-radius: 24px;
+
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $first-color;
+
+  @include tablet {
+    padding: 118px 32px 40px 32px;
+  }
+
+  @include desktop {
+    padding: 165px 63px 60px 64px;
+  }
+}
+
+.products__icon-ice-cream {
+  background-color: #ffb8ca;
+}
+
+.products__icon-ice-coffee {
+  background-color: #f0d1a5;
+  font-size: 12px;
+}
+
+.products__icon-milkshakes {
+  background-color: #c2e297;
+}
+
+.products__card::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 280px;
+  height: 280px;
+  background-size: cover;
+
+  @include tablet {
+    top: -30px;
+    width: 224px;
+    height: 224px;
+  }
+
+  @include desktop {
+    top: -60px;
+    width: 368px;
+    height: 394px;
+  }
+}
+
+.products__icon-ice-cream::before {
+  background-image: url('../images/products-280/product1-280.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/products-280/product1-280@2x.png');
+  }
+
+  @include tablet {
+    background-image: url('../images/products-tablet/product1-224.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products-tablet/product1-224@2x.png');
+    }
+  }
+
+  @include desktop {
+    background-image: url('../images/products-desktop/product1-368.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products-desktop/product1-368@2x.png');
+    }
+  }
+}
+
+.products__icon-ice-coffee::before {
+  background-image: url('../images/products-280/product2-280.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/products-280/product2-280@2x.png');
+  }
+  @include tablet {
+    background-image: url('../images/products-tablet/product2-224.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products-tablet/product2-224@2x.png');
+    }
+  }
+
+  @include desktop {
+    background-image: url('../images/products-desktop/product2-368.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products-desktop/product2-368@2x.png');
+    }
+  }
+}
+
+.products__icon-milkshakes::before {
+  background-image: url('../images/products-280/product3-280.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/products-280/product3-280@2x.png');
+  }
+
+  @include tablet {
+    background-image: url('../images/products-tablet/product3-224.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products-tablet/product3-224@2x.png');
+    }
+  }
+
+  @include desktop {
+    background-image: url('../images/products-desktop/product3-368.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products-desktop/product3-368@2x.png');
+    }
+  }
+}
+
+.products__title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-transform: uppercase;
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.products__title::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 6px;
+
+  margin: 32px auto;
+  background-image: url('../images/points.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.products__description,
+.products__text {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+
+  @include tablet {
+    line-height: 1.76;
+  }
+
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+.products__description {
+  margin-bottom: 32px;
+
+  @include desktop {
+    margin-bottom: 60px;
+  }
+}
+
+.products__btn1,
+.products__btn2,
+.products__btn3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px auto;
+  padding: 0;
+
+  cursor: pointer;
+
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  border-radius: 50%;
+  background-color: $first-color;
+
+  @include transitions(background-color);
+
+  &:hover,
+  &.is-open:focus {
+    background-color: #aaaaaa;
+  }
+
+  & .icon-arrow-close,
+  &.is-open .icon-arrow-open {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  & .icon-arrow-open,
+  &.is-open .icon-arrow-close {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    @include transitions(opacity, visibility);
+  }
+}
+
+.icon-arrow {
+  display: block;
+  width: 30%;
+  height: 30%;
+}
+
+.products__article1,
+.products__article2,
+.products__article3 {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.products__article1,
+.products__article2,
+.products__article3 {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 25px;
+
+  @include transitions(visibility);
+}
+
+.products__consist-list,
+.products__consist-list li {
+  text-align: left;
+  padding-left: 10px;
+  list-style: square;
+}

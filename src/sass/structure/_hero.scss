@@ -1,0 +1,487 @@
+.hero {
+  background-color: #ffb8ca;
+
+  position: relative;
+  height: 444px;
+  overflow: hidden;
+
+  @include tablet {
+    height: 416px;
+  }
+
+  @include desktop {
+    height: 664px;
+  }
+}
+
+.hero-container {
+  margin: 0 auto;
+
+  @include tablet {
+    position: relative;
+    width: 100%;
+    height: 416px;
+  }
+
+  @include desktop {
+    height: 664px;
+  }
+}
+
+.hero__title {
+  font-family: 'Titan One', sans-serif;
+  @include font(400, 26px, 1.15, 0.04em);
+  color: $first-color;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 22px;
+  }
+
+  @include desktop {
+    font-size: 38px;
+    line-height: 1.14;
+  }
+}
+
+.hero__text-btns {
+  position: absolute;
+  z-index: 1;
+
+  margin-top: 134px;
+
+  @include tablet {
+    margin-top: 102px;
+  }
+
+  @include desktop {
+    margin-top: 147px;
+  }
+}
+
+.accent-title {
+  color: $second-color;
+  @include font(null, 48px, 0.96, null);
+
+  @include tablet {
+    font-size: 34px;
+  }
+
+  @include desktop {
+    font-size: 58px;
+    line-height: 0.9;
+  }
+}
+
+.hero__btn {
+  font-family: 'DM Sans';
+  @include font(null, 8px, 1.25, null);
+
+  border: none;
+  border-radius: 20px;
+  padding: 9px 14px;
+
+  background-color: $first-color;
+  color: $second-color;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.3;
+
+    padding: 15px 21px;
+    border-radius: 25px;
+  }
+}
+
+.hero__btn--products {
+  background-color: $second-color;
+  color: $first-color;
+
+  &:hover,
+  &:focus {
+    background-color: $fourth-color;
+  }
+
+  @include transitions(background-color);
+}
+
+.hero__btn--about {
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @include transitions(background-color);
+}
+
+.hero-button {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+  gap: 8px;
+
+  @include tablet {
+    gap: 9px;
+  }
+
+  @include desktop {
+    margin-top: 24px;
+    gap: 12px;
+    padding: 15px 0;
+  }
+}
+
+.hero-circle {
+  margin-top: 23px;
+  margin-left: 36px;
+
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+  background-color: $fourth-color;
+
+  @media screen and (min-width: 426px) and (max-width: 767.98px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include tablet {
+    position: absolute;
+    top: 43px;
+    left: 216px;
+
+    width: 335px;
+    height: 335px;
+
+    margin: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+
+    top: 54px;
+    left: 501px;
+
+    width: 534px;
+    height: 534px;
+
+    margin: 0;
+  }
+
+  animation-duration: 1500ms;
+}
+
+.hero-circle__ice-cream {
+  position: absolute;
+  top: 9px;
+  left: 81px;
+
+  @include tablet {
+    top: 37px;
+    left: 74px;
+
+    width: 143px;
+    height: 336px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  animation-duration: 2000ms;
+  animation-delay: 1000ms;
+}
+
+.ice-cream-animation {
+  position: absolute;
+  top: 54px;
+  left: 119px;
+
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
+}
+
+.ice-cream-animation__item {
+  position: absolute;
+  width: 236px;
+
+  &:last-child {
+    top: 333px;
+    left: 14px;
+  }
+
+  &:nth-child(5) {
+    top: 302px;
+    left: 14px;
+  }
+
+  &:nth-child(4) {
+    top: 251px;
+    left: 9px;
+  }
+
+  &:nth-child(3) {
+    top: 174px;
+    left: 3px;
+  }
+
+  &:nth-child(2) {
+    top: 110px;
+    left: 10px;
+  }
+
+  &:nth-child(1) {
+    top: 10px;
+    left: 22px;
+  }
+}
+
+.hero-circle__milk {
+  @include mobile-only {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+  }
+
+  @include desktop {
+    bottom: 60px;
+    left: 0;
+    width: 213px;
+  }
+}
+
+.hero-circle__tasty {
+  @include mobile-only {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @include desktop {
+    width: 304px;
+  }
+}
+
+.hero-counter-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 92px;
+  gap: 16px;
+
+  @include mobile-only {
+    display: none;
+  }
+
+  @include desktop {
+    padding-top: 152px;
+    gap: 15px;
+  }
+}
+
+.hero-counter__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+
+  position: relative;
+  width: 43px;
+  height: 44px;
+
+  &:last-child {
+    width: 51px;
+  }
+
+  @include desktop {
+    width: 72px;
+    height: 76px;
+
+    &:last-child {
+      width: 92px;
+    }
+  }
+}
+
+.hero-counter__meta {
+  font-family: 'Titan One', sans-serif;
+  @include font(400, 28px, 1.14, 0.04em);
+  color: $second-color;
+
+  @include desktop {
+    font-size: 46px;
+  }
+
+  &:hover {
+    color: $fourth-color;
+  }
+
+  @include transitions(color);
+}
+
+.hero-counter__text {
+  font-family: 'DM Sans', sans-serif;
+  @include font(400, 8px, 1.25, null);
+  color: $first-color;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+
+.hero-counter__circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  background-color: $first-color;
+
+  @include desktop {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.meta-text {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero-description {
+  @include mobile-only {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  z-index: 1;
+
+  max-width: 114px;
+  margin-top: 92px;
+  margin-left: 152px;
+
+  @include desktop {
+    max-width: 200px;
+    margin-top: 136px;
+    margin-left: 213px;
+  }
+}
+
+.hero-description__text,
+.hero-description__text-hidden {
+  color: $first-color;
+  font-family: 'DM Sans', sans-serif;
+  @include font(400, 8px, 1.5, null);
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.hero-description__text {
+  margin-bottom: 7px;
+
+  @include desktop {
+    margin-bottom: 20px;
+  }
+}
+
+.hero-description__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin-bottom: 7px;
+
+  cursor: pointer;
+
+  width: 18px;
+  height: 18px;
+  border: 0px;
+  border-radius: 50%;
+  background-color: $first-color;
+
+  @include transitions(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: #aaaaaa;
+  }
+
+  & .icon-arrow-close {
+    display: none;
+  }
+
+  &.is-open .icon-arrow-close {
+    display: block;
+  }
+  &.is-open .icon-arrow-open {
+    display: none;
+  }
+
+  @include desktop {
+    width: 26px;
+    height: 26px;
+
+    margin-bottom: 20px;
+  }
+}
+
+.hero__article {
+  display: none;
+}
+
+// ---------- ANIMATION Ice Cream ----------
+
+.ice-cream-animation__item {
+  animation-duration: 1000ms;
+  animation-delay: 2250ms;
+
+  &:nth-child(2) {
+    animation-duration: 1000ms;
+    animation-delay: 2150ms;
+  }
+
+  &:nth-child(3) {
+    animation-duration: 1000ms;
+    animation-delay: 2000ms;
+  }
+
+  &:nth-child(4) {
+    animation-duration: 1000ms;
+    animation-delay: 1800ms;
+  }
+
+  &:nth-child(5) {
+    animation-duration: 1000ms;
+    animation-delay: 1500ms;
+  }
+
+  &:nth-child(6) {
+    animation-duration: 1000ms;
+    animation-delay: 1100ms;
+  }
+}
