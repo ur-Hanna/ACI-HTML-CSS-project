@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://igr-0k.github.io/aci-group-project",
+  "homepage": "https://ur-hanna.github.io/ACI-HTML-CSS-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /aci-group-project/"
+    "build": "parcel build src/*.html --public-url /ACI-HTML-CSS-project/"
   },
   "repository": {
     "type": "git",
